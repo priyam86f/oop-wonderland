@@ -1,14 +1,13 @@
 public class salary {
     public static void main(String[] args) {
-       int baseSalary=50000;
-       int per_hour_pay = 50;
-       int extrahours=25;
+        //procedural programming, this
 
-       int res = finalSal(baseSalary, per_hour_pay, extrahours);
-       System.out.println(res);
+        encSalary employee_1 = new encSalary();
+        employee_1.baseSalary=60000;
+        employee_1.per_hour_pay=65;
+       System.out.println(employee_1.calculateSal(6));
+      
     }
 
-    public static int finalSal(int baseSalary,int per_hour_pay,int extrahours){
-        return baseSalary + (per_hour_pay*extrahours);
-    }
+   
 }
